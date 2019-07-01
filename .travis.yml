@@ -13,7 +13,7 @@ services:
 
 env:
   global:
-    - ROLE_NAME: nginx
+    - ROLE_NAME: nfs
     - ANSIBLE_ACTION_WARNINGS: "False"
     - ANSIBLE_COMMAND_WARNINGS: "False"
     - ANSIBLE_DEPRECATION_WARNINGS: "False"
@@ -55,7 +55,7 @@ install:
 
 
  # Install ansible role
- - ansible-galaxy install wluisaraujo.nginx
+ - ansible-galaxy install wluisaraujo.nfs
 
 script:
  # Basic role syntax check
