@@ -1,7 +1,13 @@
 ---
 # tasks file for NFS
 
-- name: "This is NFS"
-  shell: echo
+- name: "Install the nfs package"
+  package:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop:
+    - nfs
+
 
 ...
